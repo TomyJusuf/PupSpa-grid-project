@@ -11,6 +11,7 @@ body {
 }
 
 header {
+  display: grid;
   grid-column-start: 1;
   grid-column-end: 7;
 }
@@ -35,8 +36,8 @@ header {
   letter-spacing: 3.7px;
 }
 
-p,
-.banner-contents {
+
+.banner-contents,p {
   max-width: 80%;
   margin: auto;
 }
@@ -47,6 +48,7 @@ img {
 }
 
 .about {
+  display: grid;
    grid-column-start: 1;
   grid-column-end: 7;
   background-color: #f0f0f0;
@@ -61,6 +63,7 @@ img {
 }
 
 .box {
+  display: grid;
   background-color: #2f2f2f;
   color: #ffffff;
   font-family: Poppins;
@@ -71,15 +74,15 @@ img {
 }
 
 .address {
-  grid-column:span 2/2;
+  grid-column: span 2;
 }
 
 .hours {
-  grid-column:1 / span 3/4;
+  grid-column:span 2;
 }
 
 .call-us {
-  grid-column:  1 / span 5/6;
+  grid-column: span 2;
 }
 
 .icon {
@@ -88,6 +91,7 @@ img {
 }
 
 .testimonial {
+  display: grid;
   background-color: #f0f0f0;
   color: #db6363;
   font-family: Poppins;
@@ -97,14 +101,18 @@ img {
 }
 
 .one {
+  grid-row-start:5 ;
   grid-column: span 3;
 }
 
 .two {
+    grid-row-start:5 ;
+
   grid-column: span 3;
 }
 
 footer {
+  display: grid;
    grid-column-start: 1;
   grid-column-end: 7;
   background-color: #db6363;
